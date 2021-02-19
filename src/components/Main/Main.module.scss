@@ -1,0 +1,21 @@
+.main {
+  flex-grow: 1;
+  padding: 15px;
+}
+.card {
+  display: flex;
+  background: #aaa;
+}
+.ava {
+  flex-shrink: 0;
+  width: 160px;
+}
+.ava img {
+  display: block;
+  width: 100%;
+}
+.descr {
+  flex-grow: 1;
+  padding: 10px 15px;
+  background: #ddd;
+}
