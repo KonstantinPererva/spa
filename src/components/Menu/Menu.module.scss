@@ -22,4 +22,8 @@
     outline: none;
     text-decoration: none;
   }
+
+  &.active {
+    background: rgba(17,85,153,.2);
+  }
 }

@@ -1,8 +1,11 @@
 import Profile from "./components/Profile/Profile";
+import {BrowserRouter} from "react-router-dom";
 
 const App = () => {
   return (
-    <Profile />
+      <BrowserRouter>
+        <Profile />
+      </BrowserRouter>
   );
 }
 
