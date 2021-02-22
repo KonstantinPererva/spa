@@ -1,9 +1,9 @@
-import Header from "./Header/Header";
-import Aside from "./Aside/Aside";
-import Main from "./Main/Main";
-import Footer from "./Footer/Footer";
+import Header from "../Header/Header";
+import Aside from "../Aside/Aside";
+import Main from "../Main/Main";
+import Footer from "../Footer/Footer";
 import css from "./Profile.module.scss";
-import './../app.css';
+import '../../app.css';
 
 const Profile = () => {
     return (

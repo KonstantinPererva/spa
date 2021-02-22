@@ -1,24 +1,15 @@
-import Header from "../Header/Header";
-import Aside from "../Aside/Aside";
-import Main from "../Main/Main";
-import Footer from "../Footer/Footer";
-import css from "./Profile.module.scss";
-import '../../app.css';
+import css from "./MyPosts.module.scss";
+import Post from "./Post/Post";
 
-const Profile = () => {
+const MyPosts = () => {
     return (
         <div className={css.wrapper}>
-            <Header />
-
-            <div className={css.content}>
-                <Aside />
-
-                <Main />
-            </div>
-
-            <Footer />
+            <Post message="Hi, how are you" />
+            <Post message="It`s my first post" />
+            <Post message="Dgfdfd df df fd df" />
+            <Post message="Vsdf sdf fdsf sdf dsf sdfsd" />
         </div>
     );
 }
 
-export default Profile;
+export default MyPosts;

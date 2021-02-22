@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuItem {
+  margin: 0 15px;
+}
+.menuLink {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 125%;
+  text-decoration: none;
+  outline: none;
+  user-select: none;
+
+}

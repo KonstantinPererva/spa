@@ -1,5 +1,6 @@
-import logo from "../logo.svg";
+import logo from "../../logo.svg";
 import css from "./Main.module.scss";
+import MyPosts from "../Profile/MyPosts/MyPosts";
 
 const Main = () => {
     return (
@@ -11,7 +12,7 @@ const Main = () => {
 
                 <div className={css.descr}>
                     <div className={css.name}>
-                        <span>Dmitry K.</span>
+                        <span>Kostya K.</span>
                     </div>
 
                     <div className={css.dateBirth}>
@@ -46,6 +47,10 @@ const Main = () => {
                         <textarea type="text" className={css.input} />
                     </div>
                 </form>
+            </div>
+
+            <div className={css.posts}>
+                <MyPosts />
             </div>
         </main>
     );

@@ -1,11 +1,13 @@
-import css from "./MyPosts.module.scss";
+import css from "./Post.module.scss";
 
-const MyPosts = () => {
+const Post = (props) => {
+    console.log(props);
+
     return (
         <div className={css.wrapper}>
-            Posts
+            {props.message}
         </div>
     );
 }
 
-export default MyPosts;
+export default Post;

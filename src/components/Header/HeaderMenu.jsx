@@ -1,6 +1,6 @@
-import css from "./Menu.module.scss";
+import css from "./HeaderMenu.module.scss";
 
-const Menu = () => {
+const HeaderMenu = () => {
     return (
         <nav className={css.menu}>
             <div className={css.menuItem}>
@@ -18,4 +18,4 @@ const Menu = () => {
     );
 }
 
-export default Menu;
+export default HeaderMenu;

@@ -1,8 +1,18 @@
 .header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 56px;
   background: #159;
 }
 .logo {
   display: block;
+  height: 100%;
+}
+.wrLogo {
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
 }

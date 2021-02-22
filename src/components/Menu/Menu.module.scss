@@ -1,0 +1,25 @@
+.menu {
+  padding: 15px 0;
+}
+.menuItem {
+  margin: 0 0 2px;
+}
+.menuLink {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 6px 15px;
+  font-size: 16px;
+  line-height: 125%;
+  color: #115599;
+  text-decoration: none;
+  transition: 150ms;
+  outline: none;
+  user-select: none;
+
+  &:hover {
+    background: rgba(17,85,153,.2);
+    outline: none;
+    text-decoration: none;
+  }
+}

@@ -1,4 +1,4 @@
-import Menu from "./Menu";
+import Menu from "../Menu/Menu";
 import css from "./Aside.module.scss";
 
 const Aside = () => {
