@@ -1,13 +1,26 @@
+import React from 'react';
 import logo from "../../logo.svg";
 import css from "./Main.module.scss";
 import MyPosts from "../Profile/MyPosts/MyPosts";
 
-const Main = () => {
+const Main = (props) => {
+    let newPostElement = React.createRef();
+
+    let addNewPost = () => {
+        let text = newPostElement.current.value;
+        props.addPost(text);
+        newPostElement.current.value = '';
+    }
+
+    let onPostChange = () => {
+        let text = newPostElement.current.value;
+    }
+
     return (
         <main className={css.main}>
             <div className={css.card}>
                 <div className={css.ava}>
-                    <img src={logo} alt="ava" />
+                    <img src={logo} alt="ava"/>
                 </div>
 
                 <div className={css.descr}>
@@ -42,15 +55,24 @@ const Main = () => {
                     <span>My posts</span>
                 </div>
 
-                <form action="!" className={css.form}>
+                <div className={css.form}>
                     <div className={css.formRow}>
-                        <textarea type="text" className={css.input} />
+                        <textarea
+                            className={css.textarea}
+                            ref={newPostElement}
+                            value={props.state.newPostText}
+                            onChange={onPostChange}
+                        />
                     </div>
-                </form>
+
+                    <div>
+                        <button type="button" onClick={addNewPost}>Add post</button>
+                    </div>
+                </div>
             </div>
 
             <div className={css.posts}>
-                <MyPosts />
+                <MyPosts state={props.state}/>
             </div>
         </main>
     );

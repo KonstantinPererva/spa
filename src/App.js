@@ -1,10 +1,11 @@
 import Profile from "./components/Profile/Profile";
 import {BrowserRouter} from "react-router-dom";
+import React from "react";
 
-const App = () => {
+const App = (props) => {
   return (
       <BrowserRouter>
-        <Profile />
+        <Profile state={props.state} addPost={props.addPost}/>
       </BrowserRouter>
   );
 }

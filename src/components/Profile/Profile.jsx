@@ -6,17 +6,18 @@ import Dialog from "../Dialog/Dialog";
 import css from "./Profile.module.scss";
 import '../../app.css';
 import {Route} from "react-router-dom";
+import React from "react";
 
-const Profile = () => {
+const Profile = (props) => {
     return (
 
         <div className={css.wrapper}>
             <Header />
-
+            
             <div className={css.content}>
                 <Aside />
-                <Route path="/profile" component={Main}/>
-                <Route path="/dialog" component={Dialog}/>
+                <Route path="/profile" render={() => <Main state={props.state.profilePage} addPost={props.addPost} />}/>
+                <Route path="/dialog" component={() => <Dialog />}/>
             </div>
 
             <Footer />

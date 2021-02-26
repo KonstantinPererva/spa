@@ -1,13 +1,12 @@
 import css from "./MyPosts.module.scss";
 import Post from "./Post/Post";
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+    let posts = props.state.posts.map(post => <Post key={post.id} postMessage={post.message} />);
+
     return (
         <div className={css.wrapper}>
-            <Post message="Hi, how are you" />
-            <Post message="It`s my first post" />
-            <Post message="Dgfdfd df df fd df" />
-            <Post message="Vsdf sdf fdsf sdf dsf sdfsd" />
+            {posts}
         </div>
     );
 }
